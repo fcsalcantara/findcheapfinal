@@ -17,11 +17,13 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table usuario (_id integer primary key, nome text, email text, cpf text, senha text);";
         db.execSQL(sql);
-        sql = "insert into usuario (nome, email, cpf, senha) values ('admin', 'admin', '000.000.000-00', '12345'), " +
-                "('fcsa', 'fcsa@', '000.000.000-00', '123456');";
+        sql = "insert into usuario (nome, email, cpf, senha) values ('admin', 'admin', '000.000.000-00', '12345'), ('fcsa', 'fcsa@', '000.000.000-00', '123456');";
+        db.execSQL(sql);
+        sql = "create table produto (_id integer primary key, tipo text, marca text, nome text, qtde text);";
         db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) { }
+
 }

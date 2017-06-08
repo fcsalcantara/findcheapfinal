@@ -9,6 +9,11 @@ public class Usuario {
 
     public Usuario() { }
 
+    public Usuario(String login, String senha) {
+        this.email = login;
+        this.senha = senha;
+    }
+
     public Usuario(String nome, String email, String cpf, String senha) {
         this.nome = nome;
         this.email = email;
@@ -16,7 +21,7 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getNome() { return nome; }
+//    public String getNome() { return nome; }
 
     public void setNome(String nome) { this.nome = nome; }
 
@@ -24,7 +29,7 @@ public class Usuario {
 
     public void setEmail(String email) { this.email = email; }
 
-    public String getCpf() { return cpf; }
+//    public String getCpf() { return cpf; }
 
     public void setCpf(String cpf) { this.cpf = cpf; }
 
@@ -39,8 +44,7 @@ public class Usuario {
     public boolean equals(Object object) {
         if (object instanceof Usuario) {
             Usuario usuario = (Usuario) object;
-            return this.email.equalsIgnoreCase(usuario.getEmail())
-                    && this.senha.equalsIgnoreCase(usuario.getSenha());
+            return this.email.equalsIgnoreCase(usuario.getEmail()) && this.senha.equalsIgnoreCase(usuario.getSenha());
         } else {
             return false;
         }

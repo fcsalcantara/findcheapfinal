@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.uva.findcheap.EntradaProdutoActivity">
+    android:background="@color/fundo_activity">
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/procuraManualTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:hint="Procura Manual"
+            android:inputType="textAutoComplete"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/economizarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Economizar!"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/texto_botao"
+            android:textStyle="bold"
+            android:background="@color/fundo_botao"
+            android:onClick="economizarOnClick"
+            android:layout_marginTop="46dp"
+            android:layout_below="@+id/procuraManualTxt"
+            android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:src="@drawable/casa"
+            android:clickable="true"
+            android:onClick="homeOnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewCodigoBarras"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:src="@drawable/codigo_de_barras" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
