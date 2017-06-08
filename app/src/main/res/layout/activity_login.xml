@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/fundo_activity">
+
+        <ImageView
+            android:id="@+id/imageViewLogin"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/logo_full" />
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress">
+                <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/fundo_botao"
+            android:onClick="entrarOnClick"
+            android:padding="5dp"
+            android:text="@string/botao_entrar_login_rotulo"
+            android:textColor="@color/texto_botao"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonCriarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/fundo_botao"
+            android:onClick="criarContaOnClick"
+            android:padding="5dp"
+            android:text="@string/botao_criar_conta_rotulo"
+            android:textColor="@color/texto_botao"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLinkRecuperarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/link"
+            android:text="@string/link_recuparar_senha_rotulo"
+            android:clickable="true"
+            android:onClick="esqueceuSenhaOnClick"/>
+
+</LinearLayout>

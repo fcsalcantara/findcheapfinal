@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F9551</color>
+    <color name="colorPrimaryDark">#307F3F</color>
+    <color name="colorAccent">#F08140</color>
+
+    <color name="fundo_activity">#E8F4E8</color>
+    <color name="fundo_botao">#587458</color>
+    <color name="texto_botao">#F4FFF4</color>
+    <color name="link">#487448</color>
+</resources>

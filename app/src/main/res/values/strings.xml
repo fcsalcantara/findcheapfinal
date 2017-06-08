@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FindCheap</string>
+
+    <string name="botao_entrar_login_rotulo">Começar a economizar</string>
+    <string name="botao_criar_conta_rotulo">Criar a sua conta</string>
+    <string name="link_recuparar_senha_rotulo">Recuperar a sua senha</string>
+</resources>

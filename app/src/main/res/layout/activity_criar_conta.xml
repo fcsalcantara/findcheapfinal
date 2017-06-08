@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/fundo_activity">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logo_full" />
+
+    <EditText
+        android:id="@+id/nomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe seu nome"
+        android:inputType="textPersonName"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Informe seu e-mail"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/cpfTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Digite o CPF"
+        android:inputType="number"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/senhaPsswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Insira uma senha"
+        android:inputType="textPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/confirmarSenhaPswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Confirmar a senha"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/criarNovaContaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickCriarContaBtn"
+        android:text="Criar nova conta"
+        android:background="@color/fundo_botao"
+        android:textColor="@color/texto_botao"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
